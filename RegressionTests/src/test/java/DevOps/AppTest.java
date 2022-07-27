@@ -25,7 +25,7 @@ public class AppTest
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe"); 
 		driver = new ChromeDriver();		
-		driver.get("http://localhost:9010/java-tomcat-maven-example/index.jsp");
+		driver.get("http://localhost:9030/java-tomcat-maven-example/index.jsp");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		Thread.sleep(3000);		
 	}
