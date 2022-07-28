@@ -23,7 +23,7 @@ public class AppTest
 	@BeforeClass
 	public static void setup() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe"); 
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); 
 		driver = new ChromeDriver();		
 		driver.get("http://localhost:9030/java-tomcat-maven-example/index.jsp");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
