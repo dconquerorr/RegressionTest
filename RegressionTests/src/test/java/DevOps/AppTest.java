@@ -24,7 +24,9 @@ public class AppTest
 	public static void setup() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); 
-		driver = new ChromeDriver();		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);		
 		driver.get("http://localhost:9010/java-tomcat-maven-example/index.jsp");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		Thread.sleep(3000);		
